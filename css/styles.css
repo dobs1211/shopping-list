@@ -7,7 +7,7 @@ CSS reset
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 110%;
     /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     box-sizing: border-box;
     /*reset Chrome user agent styles*/
@@ -27,13 +27,154 @@ General styles (General Module, wrapping around the modules bellow)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+html {
+    background: url("../images/shopping-cart-image-edited.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    color: orangered;
+    font-weight: 200;
+    padding: 2rem;
+    margin: 0rem;
+    font-family: 'Raleway', sans-serif;
+    float: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header,
+section,
+footer {
+    width: 58%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 100%;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin-top: 3px;
+    padding-top: 20px;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.wrapper {
+    -webkit-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.75);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.title,
+.content,
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.box {
+    margin-top: 3px;
+    margin-right: 30px;
+    height: 17px;
+    width: 17px;
+}
+
+span {
+    margin: 0;
+}
+
+#list {
+    margin-top: 0;
+    padding: 5px 5px 5px 15px;
+    text-align: right;
+    list-style: none;
+}
+
+.checked,
+.trash {
+    vertical-align: middle;
+}
 
 
-/* -------------------------------------
-Header styles (Main Module)
+/* Header styles
 (all the styles inside the < header > or < nav > tags)
 */
+
+header {
+    background-color: orangered;
+    border-color: orangered;
+    border-radius: 1px;
+    border-style: none;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    text-align: center;
+    text-shadow: none;
+    width: 20rem;
+}
+
+.title {
+    background-image: url("../images/shopping-cart-image-edited.jpg");
+    background-repeat: no-repeat;
+    height: 179px;
+    margin-top: 2rem;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 410%;
+    padding-top: 4rem;
+    text-shadow: 2px 2px 2px black;
+    color: #0D59A9;
+}
+
+.title h1:hover {
+    font-size: 420%;
+}
+
+#item {
+    margin-top: 8px;
+    height: 20px;
+    width: 200px;
+}
+
+button {
+    height: 41px;
+    width: 176px;
+    background: beige;
+    font-size: 19px;
+    border: 3px solid;
+    border-radius: 11px;
+    padding: 6px 5px 7px 10px;
+}
+
+.allItems li {
+    text-align: left;
+    font-size: 1.5em;
+}
 
 
 /* -------------------------------------
@@ -41,11 +182,127 @@ Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
 
+.text-box {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 297px;
+    margin: 0 auto;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.content {
+    background-image: url("../images/shopping-cart-image-edited.jpg");
+    background-repeat: repeat-y;
+    min-height: 3rem;
+}
+
+.content #addItem,
+.content #addItemValue {
+    background-color: #0D59A9;
+    border-color: #0D59A9;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    padding: 0.3rem;
+    text-align: center;
+    text-shadow: none;
+    width: auto;
+}
+
+.content #addItem:hover,
+.content #addItemValue: hover {
+    border: 2px solid black;
+}
+
+.content ul {
+    list-style: outside none none;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content li {
+    display: block;
+    height: auto;
+    margin-top: 0.5em;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    text-align: left;
+}
+
+.content .ticked {
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+.content .list {
+    margin-top: 0;
+    padding: 5px 5px 5px 15px;
+    text-align: left;
+    list-style: none;
+}
+
+.content .list:hover {
+    font-size: 1.1rem;
+}
+
+.content .checkbox,
+.content .delete {
+    background-color: black;
+    border-radius: 1.25rem;
+    border-style: none;
+    color: white;
+    height: 35px;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    width: 30px;
+}
+
+.content #addItem:hover,
+.content .checkbox:hover {
+    background-color: #0D59A9;
+    color: white;
+    border: 2px solid black;
+}
+
+.content button {
+    height: auto;
+    width: auto;
+    background: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0 0 4px 0;
+}
+
 
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
+
+footer button {
+    background-color: orangered;
+    border-color: orangered;
+    border-radius: 7px;
+    border-style: none;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 9rem;
+    padding: 0.2rem 1.5rem;
+    text-align: center;
+    text-shadow: none;
+    width: 18rem;
+}
+
+.delete-all:hover {
+    border: 2px solid black;
+}
 
 
 /* -------------------------------------
