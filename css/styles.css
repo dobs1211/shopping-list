@@ -55,7 +55,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 0.5rem;
+    margin-top: 4.5rem;
     margin-bottom: 1rem;
     font-size: 100%;
 }
@@ -190,7 +190,7 @@ Content styles (Main Module)
 .container {
     width: 297px;
     margin: 0 auto;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', bold, cursive;
 }
 
 .content {
@@ -278,6 +278,11 @@ Content styles (Main Module)
     font-size: 18px;
     border-radius: 5px;
     padding: 0 0 4px 0;
+}
+
+.checked {
+    background-color: grey;
+    text-decoration: line-through;
 }
 
 
