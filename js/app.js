@@ -51,7 +51,7 @@ function addItem() {
     else {
 
         //dynamicaly create one row inside the shopping list
-        var row = $('<li><img class="emptybox" src="images/checkbox-empty.png"><span class="list">' + itemValue + '</span><img class="trash" src="..//shopping-list/images/garbage-white.png"></li>');
+        var row = $('<li><img class="emptybox" src="images/checkbox-empty.png"><span class="list"> ' + itemValue + ' </span><img class="trash" src="..//shopping-list/images/garbage-white.png"></li>');
 
         //add each row to the previous ones
         $('.shopping-list').append(row);
@@ -114,3 +114,11 @@ $(document).on('click', '.trash', deleteAnItem);
 
 /* on click on the ".emptybox" button activate function called checkItem() */
 $(document).on('click', '.emptybox', checkItem);
+
+/*add item on enter*/
+$(document).on('keypress', function (key) {
+    //keyCode == 13 is the ENTER key
+    if (key.keyCode == 13) {
+        addItem();
+    }
+});

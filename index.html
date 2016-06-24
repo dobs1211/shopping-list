@@ -13,19 +13,21 @@
 <body>
 
     <header>
-        <h1>Shopping List</h1> </header>
-    <section class="inputs">
-
-    </section>
-    <section class="list">
+        <h1>Shopping List</h1>
+    </header>
+    <section>
         <div class="container">
             <!--text box for shopping items-->
-
-            <input type="text" id="inputBox" value placeholder="Type item to buy" size="20">
-            <button type="submit" id="addItem"> + Add Item</button>
+            <div class="column">
+                <input type="text" id="inputBox" value placeholder="Type item to buy" size="20">
+            </div>
+            <div class="column">
+                <button type="submit" id="addItem"> + Add Item</button>
+            </div>
 
             <ul class="shopping-list">
-                <li>
+                <!--
+                   <li>
                     <img class="emptybox" src="images/checkbox-empty.png">
                     <span class="list">Apples</span>
                     <img class="trash" src="..//shopping-list/images/garbage-white.png">
@@ -40,6 +42,7 @@
                     <span class="list">Popcorn</span>
                     <img class="trash" src="..//shopping-list/images/garbage-white.png">
                 </li>
+                -->
             </ul>
         </div>
     </section>
